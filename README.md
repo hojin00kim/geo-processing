@@ -1,5 +1,3 @@
-# geo-processing
-Tools for geospatial data analysis - image and vector data handling
 
 # Geospatial-Toolbox
 
@@ -8,10 +6,7 @@ This is a personal repo for answering various questions that I have faced while 
 
 This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.  
 
-Organization: The Climate Corporation  
-Team: Geospatial Research Field Imaging  
 Author: Hojin Kim  
-Copyright (c) 2018 The Climate Corporation  
 
 
 ##### geo-processing
