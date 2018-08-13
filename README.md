@@ -18,6 +18,8 @@ Author: Hojin Kim
 |image_utmzone_finder.py | find matching utm zone from image with geographic coordinate system |
 |image_chunker.py | chunk imagery data by user defined window size |
 |quad_blob_estimation.py | estimate percentage of blob area from each quad section | 
+|extract_validation_data_image.py | little automated qa/qc tool for checking output image and products match and the algorithm works and generated expected output |  
+
 
 ##### vector-tools
 |file                           | Description   |
