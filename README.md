@@ -2,9 +2,9 @@
 # Geospatial-Toolbox
 
 ## Introduction
-This is a personal repo for answering various questions that I have faced while working on image (raster) and vector data processing and analysis. Most of the tools are written by Python preferably version 3 (>= 3.5). All folders will have basically two sub-folders, notebook and src that contain Python notebook (jupyter notebook) files; .ipynb in the notebook folder and .py in the src folder. If possible, please use python scripts instead of notebook files, since notebook files are mainly for testing functionality and intermediate development purpose.  
+This is a personal repo for answering various questions that I have faced while working on image (raster) and vector data processing and analysis. Most of the tools are written by Python preferably version 3 (>= 3.5). 
 
-This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.  
+These tools are distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.  
 
 Author: Hojin Kim  
 
