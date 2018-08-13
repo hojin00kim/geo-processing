@@ -16,7 +16,8 @@ Author: Hojin Kim
 |rgb_image_rotator.py | rotate raster file (rgb geotiff format) to an arbitrary angle |
 |update_raster_geotiff_header.py | update imagery geotiff header based on twf file |
 |image_utmzone_finder.py | find matching utm zone from image with geographic coordinate system |
-|image_chunker.py | chunk imagery data by user defined window size |  
+|image_chunker.py | chunk imagery data by user defined window size |
+|quad_blob_estimation.py | estimate percentage of blob area from each quad section | 
 
 ##### vector-tools
 |file                           | Description   |
