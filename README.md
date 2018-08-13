@@ -37,4 +37,4 @@ Author: Hojin Kim
 |csv_writing_exercise.py| exercise three ways of writing a csv file using values extracted from a pandas dataframe |
 |dataframe_column_sorting.py | if you want to sort multiple columns A-Z, A-Z such as an excel tool |
 |random_extraction_by_group.py | extract random samples from column values after groupby |
-|plotmetric_csv_to_json_upload_to_s3.py| metric uploading tool especially for Breeding UAV metrics |
+|convert_csv_to_json_upload_to_s3.py| csv file uploading tool to s3 url |
