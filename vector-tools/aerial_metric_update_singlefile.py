@@ -52,8 +52,7 @@ def update_plotmetric(infile, yyyymmdd):
         dataframe: updated dataframe with "AbsC" and "AbsR" columns
     """
     columns = ['Technology', 'Location', 'Field', 'Crop', 'EntityName', 'GrowthStage', \
-               'Program', 'AbsR', 'AbsC', 'PlotBID', 'Latitude', 'Longitude', 'Metric', \
-               'Value', 'FieldID', 'MetricVersion', 'MetricUnitOfMeasure', 'AcquisitionDate']
+               'Program', 'AcquisitionDate']
 
     # create empty dataframe
     empty_df = pd.DataFrame(columns = columns)
@@ -65,8 +64,8 @@ def update_plotmetric(infile, yyyymmdd):
     updated_df = pd.concat([empty_df, data_df], ignore_index=True)
 
     # fill in fixed values
-    updated_df['Technology'] = 'MAV'
-    updated_df['Program'] = 'SD419'
+    updated_df['Technology'] = 'Manned'
+    updated_df['Program'] = 'XXXX'
 
     # obtain acquisition date from filepath
     yyyy = yyyymmdd[0:4]
@@ -82,7 +81,7 @@ def update_plotmetric(infile, yyyymmdd):
 
 if __name__ == "__main__":
 
-    infile = '/Users/hojin.kim/pc-share/Biotech/Results_NERC_RCY2_X.csv'
+    infile = '/Users/hojin.kim/pc-share/Biotech/Results_.csv'
     outdir = os.path.dirname(infile)
 
     # specify an acquistion date
