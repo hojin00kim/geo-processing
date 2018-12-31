@@ -1,7 +1,7 @@
 """
 Updating geotiff image geotiff header
 
-In 2017, there are lot of MAV imagery has missing geotiff header information
+In 2017, there are lot of imagery has missing geotiff header information
 that resulted in failure to injest into image processing pipeline.
 
 It turned out that twf file was provided but image itself did not contain
