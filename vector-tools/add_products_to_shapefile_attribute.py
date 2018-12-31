@@ -1,5 +1,5 @@
 """
-This is one of tools for validating metric results that were generated from MAV/UAV images.
+This is one of tools for validating metric results that were generated from images.
 used tk library for users who are not familiar with command line tools.
 
 In order to check the spatial pattern, metrics need to join into plotgrid geometry and
@@ -30,7 +30,7 @@ def csvfile_to_dataframe(infile, product):
         infile: string
             input filepath of a csv file
         product: product type that is going to add in the attribute table
-            for ex. LAI, LAI_CV, or NDVI
+            for ex. NDVI
     Returns
         metric_df: dataframe
     """
@@ -42,12 +42,12 @@ def csvfile_to_dataframe(infile, product):
 
     # select columns that are necessary for joining tables
     df = df[['Location', 'Field', 'Crop', 'GrowthStage',
-             'AbsR', 'AbsC', 'Longitude', 'Latitude', 'EntityName',
+            'Longitude', 'Latitude', 'EntityName',
              'Metric', 'Value']]
 
     # change the column name to match uav data
     df.columns = ['Location', 'Field', 'Crop', 'GrowthStage',
-                  'Range', 'Column', 'Longitude', 'Latitude', 'EntityName',
+                  'Longitude', 'Latitude', 'EntityName',
                   'Metric', metric]
 
     # slice the data frame for designated product row;'LAI' only
