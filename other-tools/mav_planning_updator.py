@@ -1,7 +1,7 @@
 """
-This is very crude tool to help Climate MAV acquisition planning for year of 2017.
+This is very crude tool to help image acquisition planning .
 
-Read master spreadsheet and update six different csv files for planning weekly MAV acquisition
+Read master spreadsheet and update six different csv files for planning weekly aerial acquisition
 """
 import datetime
 import os
@@ -16,9 +16,9 @@ filedir = "/Users/hojin.kim/update"
 os.chdir(filedir)
 
 # open data files
-master_file = '2017 Imaging Projections (21).xlsx'
-t1_file = 'Base Corn - Polygons - 20170825.csv'
-t2_file = 'Base Soybean - 20170825.csv'
+master_file = 'maxter_file.xlsx'
+t1_file = 'Base Polygons - 20170825.csv'
+t2_file = 'Base  - 20170825.csv'
 t3_file = 'Code 1 - 20170825.csv'
 t4_file = 'Code 2 Field Boundaries - 20170825.csv'
 t5_file = 'Code 6 - 20170825.csv'
@@ -43,9 +43,9 @@ t5_df = t5_df.replace('Planned', ' ')
 t6_df = t6_df.replace('Planned', ' ')
 
 
-master_df = master_df[(master_df['Platform'] == 'MAV (G)')]
-# master_df = master_df[(master_df['Platform'] == 'MAV (G)') & (master_df['Start'] > today)]
-# master_df = master_df[(master_df['Platform'] == 'MAV (G)') | (master_df['Platform'] == 'Mav (G)') & (master_df['Start'] > today)]
+master_df = master_df[(master_df['Platform'] == '')]
+# master_df = master_df[(master_df['Platform'] == ')') & (master_df['Start'] > today)]
+# master_df = master_df[(master_df['Platform'] == '') | (master_df['Platform'] == 'Mav (G)') & (master_df['Start'] > today)]
 
 # read "Task Name column/parse/obtain Site_ID
 prefix = master_df['Task Name'].str.split(':', 1).str[0]
